@@ -1,0 +1,3 @@
+[submodule "vendor/metaschema"]
+	path = vendor/metaschema
+	url = https://github.com/usnistgov/metaschema.git
