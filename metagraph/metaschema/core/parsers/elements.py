@@ -19,11 +19,11 @@ class MetaschemaElement:
             setattr(self, normalized_key, v)
         self.xmlns = xmlns if xmlns else DEFAULT_XMLNS
 
-class MetaschemaRoot(MetaschemaElement):
+class MetaschemaDefinition(MetaschemaElement):
     def __init__(self, tag=None, attrs=None, xmlns=None):
         super().__init__(tag, attrs, xmlns)
 
-class MetaschemaRootName(MetaschemaElement):
+class MetaschemaDefinitionName(MetaschemaElement):
     def __init__(self, tag=None, attrs=None, xmlns=None):
         super().__init__(tag, attrs, xmlns)
 

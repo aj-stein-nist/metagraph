@@ -66,7 +66,7 @@ class MetaschemaXmlHandler(ContentHandler):
         """Process a potential Metaschema XML element and its attributes to map
         into a proper element class instance."""
         if name == 'METASCHEMA':
-            return MetaschemaRoot(name, attrs, xmlns)
+            return MetaschemaDefinition(name, attrs, xmlns)
         if name =='assembly':
             return AssemblyReference(name, attrs, xmlns)
         if name == 'constraint':
@@ -178,7 +178,7 @@ class MetaschemaXmlHandler(ContentHandler):
         if name == 'sup':
             return MarkupSuperscript(name, attrs, xmlns)
         if name == 'root-name':
-            return MetaschemaRootName(name, attrs, xmlns)
+            return MetaschemaDefinitionName(name, attrs, xmlns)
 
         return None
 
