@@ -7,10 +7,10 @@ from datatypes import *
 from elements import *
 
 logging.basicConfig()
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('pymetaschema')
 logger.setLevel(getattr(logging, str(environ.get('METAGRAPH_LOGLEVEL', 'DEBUG')).upper()))
 
-class MetaschemaXmlHandler(ContentHandler):
+class MetaschemaDefinitionXmlHandler(ContentHandler):
     def __init__(self):
         super().__init__()
         self.elements = []
@@ -188,10 +188,10 @@ def clean(element):
 
 if __name__ == '__main__':
     logger.debug('test Metaschema model parse start')
-    handler = MetaschemaXmlHandler()
+    handler = MetaschemaDefinitionXmlHandler()
     parser = make_parser()
     parser.setFeature(feature_namespaces, True)
     parser.setContentHandler(handler)
-    parser.parse('vendor/oscal/src/metaschema/oscal_ssp_metaschema.xml')
+    parser.parse('tests/level1/case001/metaschema.xml')
     definition = handler.current
-    logger.debug('test Metaschema model parse start')
+    logger.debug('test Metaschema model parse end')
