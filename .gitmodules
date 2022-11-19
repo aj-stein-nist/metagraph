@@ -1,3 +1,3 @@
-[submodule "vendor/oscal"]
-	path = vendor/oscal
-	url = https://github.com/usnistgov/OSCAL.git
+[submodule "vendor/metaschema"]
+	path = vendor/metaschema
+	url = https://github.com/usnistgov/metaschema.git
