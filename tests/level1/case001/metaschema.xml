@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METASCHEMA
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/metaschema/1.0 https://raw.githubusercontent.com/usnistgov/metaschema/bf0f35dc2bb016d60b1592249e483e0adb267a42/schema/xml/metaschema.xsd"
+	xmlns="http://csrc.nist.gov/ns/oscal/metaschema/1.0">
+    <schema-name>Metaschema Test-Suite Level 1 Test Case 1 Schema</schema-name>
+    <schema-version>0.0.1</schema-version>
+    <short-name>level1-case001</short-name>
+    <namespace>https://github.com/usnistgov/metaschema-test-suite/level1/case002</namespace>
+    <json-base-uri>https://github.com/usnistgov/metaschema-test-suite/level1/case002</json-base-uri>
+    <define-assembly name="top-level">
+        <formal-name>Case 002 Root Assembly</formal-name>
+        <description>This is the Level 1 Case 2's Metaschema definition root assembly.</description>
+        <root-name>top-level</root-name>
+        <define-flag name="flag" as-type="integer">
+            <formal-name>Example Flag</formal-name>
+            <description>An example flag that accepts any integer value.</description>
+        </define-flag>
+    </define-assembly>
+</METASCHEMA>

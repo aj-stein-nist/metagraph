@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top-level xmlns="https://github.com/usnistgov/metaschema-test-suite/level1/case002">
+    <field>example-value</field>
+</top-level>
